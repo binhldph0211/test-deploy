@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 // ********* Connect to database ************
 const mysql = require('mysql');
-const dbConn = mysql.createPool({
+const dbConn = mysql.createConnection({
   host: 'sql.freedb.tech',
   user: 'freedb_posts',
   password: 'wWUA6NWB3RhF?kP',
