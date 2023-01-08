@@ -5,13 +5,13 @@ const port = 3000;
 
 // ********* Connect to database ************
 const mysql = require('mysql');
-const dbConn = mysql.createConnection({
+const dbConn = mysql.createPool({
   host: 'sql.freedb.tech',
   user: 'freedb_posts',
   password: 'wWUA6NWB3RhF?kP',
   database: 'freedb_helloDeploy'
 });
-dbConn.connect();
+// dbConn.connect();
 
 
 //******* XỬ lý Cross Origin ********
