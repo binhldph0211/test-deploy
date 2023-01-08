@@ -6,10 +6,10 @@ const port = 3000;
 // ********* Connect to database ************
 const mysql = require('mysql');
 const dbConn = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1234',
-  database: 'helloDeploy'
+  host: 'sql.freedb.tech',
+  user: 'freedb_posts',
+  password: 'wWUA6NWB3RhF?kP',
+  database: 'freedb_helloDeploy'
 });
 dbConn.connect();
 
